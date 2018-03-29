@@ -99,6 +99,7 @@ public class VulkanizerskaRadnjaTest {
 	
 	@Test
 	public void testPronadjiGumeKojePostoje() {
+		
 		vr.dodajGumu(a);		
 		
 		AutoGuma a1 = new AutoGuma();
@@ -114,7 +115,6 @@ public class VulkanizerskaRadnjaTest {
 		a2.setSirina(206);
 		a2.setVisina(59);
 		vr.dodajGumu(a2);
-		
 		
 		assertEquals(2, vr.pronadjiGumu(a1.getMarkaModel()).size());
 		assertEquals(a1, vr.pronadjiGumu(a1.getMarkaModel()).get(1));
